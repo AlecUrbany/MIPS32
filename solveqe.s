@@ -110,14 +110,12 @@ quadCheck:
 	li	$v0, 4
 	syscall
 	mov.s	$f12, $f0	#Move our argument into $f12 for printing
-	abs.s	$f12, $f12
 	li	$v0, 2
 	syscall
 	la	$a0, rtnXTwo
 	li	$v0, 4
 	syscall
 	mov.s	$f12, $f1	#Move our other argument into $f12 for printing
-	abs.s	$f12, $f12
 	li	$v0, 2
 	syscall
 	la	$a0, line
